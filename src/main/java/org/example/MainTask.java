@@ -2,9 +2,13 @@ package org.example;
 
 import java.util.Scanner;
 
-public class Lab1 {
-    public static void main(String[] args) {
+public class MainTask {
 
+    public static void main(String[] args) {
+        calculateNumbers();
+    }
+
+    public static void calculateNumbers() {
         Scanner scanner = new Scanner(System.in);
 
         double result = 0.0;
@@ -43,7 +47,7 @@ public class Lab1 {
         scanner.close();
     }
 
-    public static double doOperationOnNumbers(double a, double b, String operation) {
+    private static double doOperationOnNumbers(double a, double b, String operation) {
         return switch (operation) {
             case "+" -> a + b;
             case "-" -> a - b;
